@@ -35,7 +35,7 @@ def read_and_clean_wechat_csv(file_path: str) -> pd.DataFrame:
         
         # 转换IsSender字段：1->other, 其他->self
         df_clean['sender_label'] = df_clean['IsSender'].apply(
-            lambda x: 'other' if x == 1 else 'self'
+            lambda x: 'self' if x == 1 else 'other'
         )
         
         return df_clean

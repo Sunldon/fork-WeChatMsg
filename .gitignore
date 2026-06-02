@@ -19,3 +19,4 @@ app/DataBase/Msg/*
 test*.DS_Store
 
 .DS_Store
+wechat_cleaned.md
