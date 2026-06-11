@@ -15,7 +15,7 @@
 ### 环境要求
 
 - Python 3.10 最好是，无兼容问题
-- 微信PC版3.9.7.29
+- 微信PC版3.9.7.29：https://xiaorouy.cn/download/WeChat3.9.7.29.exe
 
 ### 安装步骤
 
@@ -446,11 +446,11 @@ class DataExporter:
                 c.showPage()
                 c.setFont('SimHei', 12)
                 y_position = 750
-      
+    
             # 绘制消息
             text = f"{msg.create_time.strftime('%Y-%m-%d %H:%M:%S')} - {msg.sender}: {msg.content}"
             c.drawString(50, y_position, text[:50])  # 限制每行长度
-      
+    
             y_position -= 20
   
         c.save()
